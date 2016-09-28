@@ -29,7 +29,8 @@ func main() {
 	tokenCode, err := bufio.NewReader(os.Stdin).ReadString('\n')
 	fmt.Printf("\n")
 	if err != nil {
-		panic(err)
+		fmt.Printf("%s\n", err)
+		os.Exit(1)
 	}
 	tokenCode = strings.TrimSpace(tokenCode)
 
