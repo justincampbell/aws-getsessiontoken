@@ -4,7 +4,14 @@ A small utility for testing [AWS STS GetSessionToken](http://docs.aws.amazon.com
 
 ## Usage
 
-Run the utility with an IAM Device Serial Number, and enter our MFA Token Code:
+First, set your AWS credentials via environment variables.
+
+```
+$ export AWS_ACCESS_KEY_ID=...
+$ export AWS_SECRET_ACCESS_KEY=...
+```
+
+Then, run the utility with an IAM Device Serial Number, and enter our MFA Token Code:
 
 ```
 $ go run main.go -s "arn:aws:iam::123456789012:mfa/justin"
