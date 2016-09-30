@@ -14,7 +14,7 @@ $ export AWS_SECRET_ACCESS_KEY=...
 Then, run the utility with an IAM Device Serial Number, and enter our MFA Token Code:
 
 ```
-$ go run main.go -s "arn:aws:iam::123456789012:mfa/justin"
+$ go run main.go -m -s "arn:aws:iam::123456789012:mfa/justin"
 MFA Token Code: 123456
 
 Request: {
